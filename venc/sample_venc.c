@@ -175,8 +175,7 @@ HI_S32 SAMPLE_VENC_1080P_CLASSIC(HI_VOID)
 		u32BlkSize = SAMPLE_COMM_SYS_CalcPicVbBlkSize(gs_enNorm,\
                 enSize[2], SAMPLE_PIXEL_FORMAT, SAMPLE_SYS_ALIGN_WIDTH);
 		stVbConf.astCommPool[2].u32BlkSize = u32BlkSize;
-		stVbConf.astCommPool[2].u32BlkCnt = g_u32BlkCnt;
-		//printf("this is a test for git user"); 
+		stVbConf.astCommPool[2].u32BlkCnt = g_u32BlkCnt; 
 
    }
 
@@ -395,6 +394,10 @@ HI_S32 SAMPLE_VENC_1080P_CLASSIC(HI_VOID)
 	    {
 	        SAMPLE_PRT("Start Venc failed!\n");
 	        goto END_VENC_1080P_CLASSIC_5;
+		printf("this is a new messages");
+		
+
+		printf("this is second program core");
 	    }
 	}
     /******************************************
